@@ -1,0 +1,18 @@
+{
+  "name": "maxdcoc-profile",
+  "private": true,
+  "type": "module",
+  "description": "Generators for the GitHub profile README: banner, stack panel and live stat cards.",
+  "scripts": {
+    "build:banner": "node scripts/build-banner.mjs",
+    "build:stack": "node scripts/build-stack.mjs",
+    "build:cards": "node scripts/build-cards.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5",
+    "simple-icons": "^13.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

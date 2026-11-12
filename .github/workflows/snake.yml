@@ -1,0 +1,40 @@
+name: Contribution snake
+
+# Draws the contribution graph as an animated snake (Platane/snk) in the locker orange,
+# one SVG per theme, and publishes them to the `output` branch. The README reads them
+# from there, so the main branch history stays clean.
+
+on:
+  schedule:
+    - cron: "43 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?color_snake=%23edeef1&color_dots=%2321262d,%23553012,%23954f10,%23e07416,%23ff9b45
+            dist/snake-light.svg?color_snake=%230e1014&color_dots=%23e1e4e8,%23ffd9b3,%23ffb066,%23ff8719,%23b04a00
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
