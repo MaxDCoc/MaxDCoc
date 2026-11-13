@@ -10,32 +10,61 @@ import { textPath, measure } from './lib/text.mjs'
 // [label, simple-icons key or null]. No icon means a small orange bullet instead.
 const GROUPS = [
   {
-    name: 'Automation',
-    items: [['n8n', 'siN8n'], ['MQTT', 'siMqtt'], ['GitHub Actions', 'siGithubactions'], ['REST APIs', null], ['GoHighLevel', null]],
-  },
-  {
-    name: 'Data and ETL',
+    name: 'Languages',
     items: [
-      ['Python', 'siPython'], ['pandas', 'siPandas'], ['NumPy', 'siNumpy'], ['PostgreSQL', 'siPostgresql'],
-      ['TimescaleDB', 'siTimescale'], ['MySQL', 'siMysql'], ['Supabase', 'siSupabase'], ['Redis', 'siRedis'], ['Power BI', null],
+      ['TypeScript', 'siTypescript'], ['JavaScript', 'siJavascript'], ['Python', 'siPython'], ['Go', 'siGo'],
+      ['C++', 'siCplusplus'], ['C#', null], ['SQL', null], ['Bash', 'siGnubash'],
     ],
   },
   {
     name: 'Backend',
-    items: [['FastAPI', 'siFastapi'], ['Django', 'siDjango'], ['NestJS', 'siNestjs'], ['Express', 'siExpress'], ['Prisma', 'siPrisma'], ['Go', 'siGo'], ['C#', null]],
-  },
-  {
-    name: 'Web, mobile and IoT',
     items: [
-      ['React', 'siReact'], ['Expo', 'siExpo'], ['TypeScript', 'siTypescript'], ['Svelte', 'siSvelte'],
-      ['Tailwind CSS', 'siTailwindcss'], ['ESP32', 'siEspressif'], ['C++', 'siCplusplus'],
+      ['NestJS', 'siNestjs'], ['FastAPI', 'siFastapi'], ['Django', 'siDjango'], ['Fastify', 'siFastify'],
+      ['Express', 'siExpress'], ['Prisma', 'siPrisma'], ['TypeORM', 'siTypeorm'], ['SQLAlchemy', 'siSqlalchemy'],
+      ['Zod', 'siZod'], ['Socket.IO', 'siSocketdotio'], ['.NET', 'siDotnet'], ['JWT', 'siJsonwebtokens'],
     ],
   },
   {
-    name: 'DevOps and AI',
+    name: 'Web and mobile',
     items: [
-      ['Docker', 'siDocker'], ['Linux', 'siLinux'], ['Traefik', 'siTraefikproxy'], ['Vercel', 'siVercel'],
-      ['Railway', 'siRailway'], ['Ollama', 'siOllama'], ['scikit-learn', 'siScikitlearn'], ['Anthropic API', 'siAnthropic'],
+      ['React', 'siReact'], ['Expo', 'siExpo'], ['Next.js', 'siNextdotjs'], ['Svelte', 'siSvelte'], ['Vite', 'siVite'],
+      ['Tailwind CSS', 'siTailwindcss'], ['three.js', 'siThreedotjs'], ['GSAP', 'siGreensock'],
+    ],
+  },
+  {
+    name: 'Databases',
+    items: [
+      ['PostgreSQL', 'siPostgresql'], ['TimescaleDB', 'siTimescale'], ['MySQL', 'siMysql'], ['MariaDB', 'siMariadb'],
+      ['SQL Server', null], ['Supabase', 'siSupabase'], ['Redis', 'siRedis'], ['PostGIS', null],
+    ],
+  },
+  {
+    name: 'DevOps',
+    items: [
+      ['Docker', 'siDocker'], ['GitHub Actions', 'siGithubactions'], ['Traefik', 'siTraefikproxy'], ['Linux', 'siLinux'],
+      ['Prometheus', 'siPrometheus'], ['Semgrep', null], ['Railway', 'siRailway'], ['Vercel', 'siVercel'], ['Netlify', 'siNetlify'],
+    ],
+  },
+  {
+    name: 'IoT and embedded',
+    items: [
+      ['ESP32', 'siEspressif'], ['Raspberry Pi Pico', 'siRaspberrypi'], ['MQTT', 'siMqtt'], ['Arduino', 'siArduino'],
+      ['OpenPLC', null], ['CircuitPython', null], ['Blender', 'siBlender'],
+    ],
+  },
+  {
+    name: 'Data, AI and testing',
+    items: [
+      ['pandas', 'siPandas'], ['NumPy', 'siNumpy'], ['scikit-learn', 'siScikitlearn'], ['Jupyter', 'siJupyter'],
+      ['Qiskit', 'siQiskit'], ['Ollama', 'siOllama'], ['Anthropic API', 'siAnthropic'], ['ECharts', 'siApacheecharts'],
+      ['Power BI', null], ['pytest', 'siPytest'], ['Vitest', 'siVitest'], ['Jest', 'siJest'], ['Playwright', null],
+    ],
+  },
+  {
+    name: 'Workflow',
+    items: [
+      ['n8n', 'siN8n'], ['GoHighLevel', null], ['Scrum', null], ['Git', 'siGit'], ['GitHub', 'siGithub'],
+      ['Jira', 'siJira'], ['Trello', 'siTrello'], ['ClickUp', 'siClickup'],
     ],
   },
 ]

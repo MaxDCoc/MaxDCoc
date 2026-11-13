@@ -26,7 +26,7 @@ const PHRASES = [
   ['2ND PLACE, HUAWEI ICT', 'GLOBAL FINAL, 179 TEAMS'],
   ['RESEARCH FELLOW, UTN', 'SUSTAINABILITY PLATFORM'],
   ['NOW BUILDING: LOCKIT!', 'SMART LOCKERS, ESP32+MQTT'],
-  ['AUTOMATION, ETL AND APIS', 'N8N, PYTHON, POSTGRES'],
+  ['DATABASE, API, APP', 'AND THE DEVICE FIRMWARE'],
   ['BASED IN RESISTENCIA', 'CHACO, ARGENTINA'],
 ]
 const STAGGER = 0.022 // seconds between characters typing in (and, later, erasing)
@@ -103,7 +103,7 @@ function build(theme) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t d">
   <title id="t">Maximiliano Cocito, full stack and embedded developer</title>
-  <desc id="d">Banner with the name, a portrait on an orange locker door, and a dot-matrix screen cycling through: 2nd place at the Huawei ICT global final, research fellow at UTN, building the LockIT smart locker network, automation and data pipelines, based in Resistencia, Argentina.</desc>
+  <desc id="d">Banner with the name, a portrait on an orange locker door, and a dot-matrix screen cycling through: 2nd place at the Huawei ICT global final, research fellow at UTN, building the LockIT smart locker network, building the whole system from the database to the device firmware, based in Resistencia, Argentina.</desc>
   <defs>
     <radialGradient id="glow" cx="0.86" cy="1" r="0.55">
       <stop offset="0" stop-color="${ACCENT}" stop-opacity="${t.glow}"/>
