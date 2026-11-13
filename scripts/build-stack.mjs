@@ -56,7 +56,7 @@ const GROUPS = [
     name: 'Data, AI and testing',
     items: [
       ['pandas', 'siPandas'], ['NumPy', 'siNumpy'], ['scikit-learn', 'siScikitlearn'], ['Jupyter', 'siJupyter'],
-      ['Qiskit', 'siQiskit'], ['Ollama', 'siOllama'], ['Anthropic API', 'siAnthropic'], ['ECharts', 'siApacheecharts'],
+      ['Ollama', 'siOllama'], ['Anthropic API', 'siAnthropic'], ['ECharts', 'siApacheecharts'],
       ['Power BI', null], ['pytest', 'siPytest'], ['Vitest', 'siVitest'], ['Jest', 'siJest'], ['Playwright', null],
     ],
   },
