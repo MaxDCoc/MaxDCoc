@@ -133,8 +133,8 @@ Reddit conversation versus the stock market: five containerized microservices ar
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MaxDCoc/MaxDCoc/output/snake-dark.svg">
-    <img src="https://raw.githubusercontent.com/MaxDCoc/MaxDCoc/output/snake-light.svg" alt="My contribution graph, eaten by a snake." width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/snake/snake-dark.svg">
+    <img src="assets/snake/snake-light.svg" alt="My contribution graph, eaten by a snake." width="100%">
   </picture>
 </p>
 
